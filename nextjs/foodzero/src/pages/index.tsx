@@ -5,7 +5,7 @@ import React, {
   useMemo,
   useState,
 } from 'react'
-import { GetStaticProps } from 'next'
+import { GetServerSideProps } from 'next'
 import Image from 'next/image'
 import {
   Box,
@@ -56,7 +56,7 @@ interface IHomeProps {
   posts: IPost[]
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   try {
     const menu: IMenu = await fetcherInstance(MENU_ENDPOINT)
     const posts: IPost[] = await fetcherInstance(POSTS_ENDPOINT)
@@ -77,7 +77,7 @@ const reservationInit = {
   time: RESERVATION_TIME[0],
   person: NUMBER_OF_PERSON[0],
 }
-export default function Home({ menu, posts }: IHomeProps) {
+export const Home = ({ menu, posts }: IHomeProps) => {
   const toast = useToast()
   const { booking, addBooking } = useBookingContext() as IBookingContext
   const [reservation, setReservation] = useState(reservationInit)
@@ -498,3 +498,5 @@ export default function Home({ menu, posts }: IHomeProps) {
     </>
   )
 }
+
+export default Home

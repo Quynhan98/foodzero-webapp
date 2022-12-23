@@ -1,6 +1,6 @@
 import { useState, useCallback, FormEvent, ChangeEvent } from 'react'
 import Image from 'next/image'
-import { GetStaticProps } from 'next'
+import { GetServerSideProps } from 'next'
 import {
   Box,
   Flex,
@@ -40,7 +40,7 @@ interface IMenuProps {
   menu: IMenu
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   try {
     const menu: IMenu = await fetcherInstance(`${MENU_ENDPOINT}`)
 
