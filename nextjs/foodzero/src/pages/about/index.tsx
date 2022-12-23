@@ -346,7 +346,7 @@ const About = () => {
         controls
         autoPlay
         src={INTRO_VIDEO}
-        poster="/images/introPoster.webp"
+        poster="/images/introPoster.jpg"
         objectFit="cover"
         width="100%"
         height="100%"

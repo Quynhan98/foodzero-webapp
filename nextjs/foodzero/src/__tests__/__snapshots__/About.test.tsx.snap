@@ -130,7 +130,7 @@ exports[`About page Renders Menu page correctly 1`] = `
     autoplay=""
     class="css-80kx6c"
     controls=""
-    poster="/images/introPoster.webp"
+    poster="/images/introPoster.jpg"
     src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
   />
   <section
