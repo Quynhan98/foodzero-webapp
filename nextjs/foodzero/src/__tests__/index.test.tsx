@@ -8,15 +8,15 @@ import {
   waitFor,
 } from '@utils/testUtils'
 
-// Home
-import Home from '@pages/index'
-
 // Mocks
 import { BLOG_SECTION_MOCK, OUR_MENU_MOCK } from '@mocks/mockData'
 
 // Constants
 import { SNACKBAR_BOOKING_SUCCESS } from '@constants/text'
 import { SERVER_ERROR } from '@constants/index'
+
+// Pages
+import { Home } from '@pages/index'
 
 describe('Home page', () => {
   global.fetch = jest.fn(() =>
