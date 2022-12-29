@@ -53,7 +53,7 @@ exports[`Header render Should Header match Snapshot 1`] = `
       class="css-1y4a8vd"
     >
       <a
-        class="chakra-link css-spn4bz"
+        class="chakra-link css-l7kert"
         href="tel:+86 852 346 000"
       >
         <p
@@ -63,7 +63,7 @@ exports[`Header render Should Header match Snapshot 1`] = `
         </p>
       </a>
       <button
-        class="chakra-button css-1cqvr3p"
+        class="chakra-button css-1xpzwsn"
         type="button"
       >
         Reservations

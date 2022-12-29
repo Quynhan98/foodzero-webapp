@@ -15,11 +15,10 @@ import {
   ModalContent,
   Text,
   useDisclosure,
-  useMediaQuery,
 } from '@chakra-ui/react'
 
 // Constants
-import { BREAKPOINTS, CONTACT, NAV_LIST } from '@constants/index'
+import { CONTACT, NAV_LIST } from '@constants/index'
 
 // Components
 import Navigation from '@components/Navigation'
@@ -28,7 +27,6 @@ import { useRouter } from 'next/router'
 
 const Header = () => {
   const router = useRouter()
-  const [isMobile] = useMediaQuery(BREAKPOINTS.MEDIUM)
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   const handClickReservationBtn = () => {
@@ -145,20 +143,19 @@ const Header = () => {
         />
       </Flex>
       <Flex gap="36px" alignItems="center">
-        {!isMobile && (
-          <Link href={`tel:${CONTACT.phoneNumber}`}>
-            <Text size="large" variant="primary">
-              {CONTACT.phoneNumber}
-            </Text>
-          </Link>
-        )}
+        <Link
+          display={{ base: 'none', md: 'block' }}
+          href={`tel:${CONTACT.phoneNumber}`}
+        >
+          <Text size="large" variant="primary">
+            {CONTACT.phoneNumber}
+          </Text>
+        </Link>
+
         <Button
           onClick={handClickReservationBtn}
           variant="primary"
-          size={{ base: 'small', '2xl': 'default' }}
-          fontSize={isMobile ? 'xxs' : 'md'}
-          lineHeight={isMobile ? 'xxs' : 'sm'}
-          fontWeight={{ base: 'base', '2xl': 'bold' }}
+          padding={{ base: '7px 10px', md: '10px 23px' }}
         >
           Reservations
         </Button>
