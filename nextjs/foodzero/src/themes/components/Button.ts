@@ -2,8 +2,7 @@ import { ComponentStyleConfig } from '@chakra-ui/react'
 
 export const Button: ComponentStyleConfig = {
   baseStyle: {
-    fontSize: { base: 'base', md: 'md' },
-    lineHeight: { base: 'xs', md: 'sm' },
+    fontSize: { base: 'xs', md: 'common', '2xl': 'md' },
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -14,15 +13,15 @@ export const Button: ComponentStyleConfig = {
   sizes: {
     large: {
       width: '100%',
-      height: { base: '42px', md: '88px' },
+      height: { base: '50px', '2xl': '96px' },
     },
     default: {
-      width: { base: '152px', md: '285px' },
-      height: { base: '50px', md: '88px' },
+      width: { base: '130px', md: '200px', '2xl': '285px' },
+      height: { base: '50px', '2xl': '96px' },
     },
     primary: {
-      width: { base: '200px', md: '344px' },
-      height: { base: '50px', md: '88px' },
+      width: { base: '200px', md: '260px', '2xl': '344px' },
+      height: { base: '50px', md: '50px', '2xl': '96px' },
     },
     small: {
       width: { base: '30px', md: '40px', '2xl': '50px' },

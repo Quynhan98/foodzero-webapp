@@ -47,7 +47,7 @@ exports[`CardReview component Renders CardReview correctly 1`] = `
         class="css-4c6vfm"
       >
         <button
-          class="chakra-button css-17h082e"
+          class="chakra-button css-evuxd7"
           data-testid="buttonBack"
           type="button"
         >
@@ -71,7 +71,7 @@ exports[`CardReview component Renders CardReview correctly 1`] = `
           3
         </p>
         <button
-          class="chakra-button css-17h082e"
+          class="chakra-button css-evuxd7"
           data-testid="buttonNext"
           type="button"
         >

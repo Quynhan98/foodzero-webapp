@@ -25,7 +25,7 @@ const LoginForm = ({
   return (
     <form onSubmit={onSubmitForm}>
       <FormLabel
-        fontSize={{ base: 'md', '2xl': 'lg' }}
+        fontSize={{ base: 'md', md: 'lg' }}
         fontWeight="bold"
         fontFamily="Rufina"
         textAlign="center"
@@ -71,6 +71,7 @@ const LoginForm = ({
           type="submit"
           isDisabled={isDisable}
           _hover={{ backgroundColor: 'none' }}
+          size="large"
         >
           Sign In
         </Button>

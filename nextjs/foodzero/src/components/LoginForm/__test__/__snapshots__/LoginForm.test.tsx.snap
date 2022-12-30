@@ -4,7 +4,7 @@ exports[`LoginForm LoginForm matches snapshot 1`] = `
 <div>
   <form>
     <label
-      class="chakra-form__label css-1379mkf"
+      class="chakra-form__label css-78n0uo"
     >
       Login
     </label>
@@ -29,7 +29,7 @@ exports[`LoginForm LoginForm matches snapshot 1`] = `
         type="password"
       />
       <button
-        class="chakra-button css-hg1guu"
+        class="chakra-button css-157j7mr"
         type="submit"
       >
         Sign In

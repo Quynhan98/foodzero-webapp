@@ -106,7 +106,11 @@ const Login = () => {
   )
 
   return (
-    <Box maxW="798px" width="100%" margin="12px">
+    <Box
+      maxW={{ base: '90%', md: '45%', '2xl': '35%' }}
+      width="100%"
+      margin="12px"
+    >
       <LoginForm
         onSubmitForm={handleSubmitForm}
         onChangeForm={handleChange}
