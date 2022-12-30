@@ -30,7 +30,7 @@ const Navigation = ({ navList, onClick, ...rest }: NavigationProps) => {
             lineHeight={{ base: '30px', '2xl': '82px' }}
             fontWeight="bold"
           >
-            <Link href={obj.href} onClick={onClick}>
+            <Link href={obj.href} onClick={onClick} prefetch={false}>
               {obj.name}
             </Link>
           </ListItem>

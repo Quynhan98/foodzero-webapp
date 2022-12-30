@@ -9,7 +9,7 @@ const NotFound = () => (
     <Text paddingBottom="50px" variant="warning" size="extraLarge">
       {API_ERROR_NOT_FOUND}
     </Text>
-    <Link href="/">
+    <Link href="/" prefetch={false}>
       <Text color="blue" size="common">
         Back To Home
       </Text>

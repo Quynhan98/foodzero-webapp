@@ -8,7 +8,7 @@ interface SocialProps extends ImageProps {
 
 const Social = ({ link, width = 28, height = 28, ...rest }: SocialProps) => {
   return (
-    <Link href={link}>
+    <Link href={link} prefetch={false}>
       <Image width={width} height={height} {...rest} />
     </Link>
   )

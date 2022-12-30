@@ -1,6 +1,7 @@
 import { useState, useCallback, FormEvent, ChangeEvent } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
-import { Box, Flex, Heading, Link, Text, useToast } from '@chakra-ui/react'
+import { Box, Flex, Heading, Text, useToast } from '@chakra-ui/react'
 
 // Constants
 import {
@@ -274,8 +275,9 @@ const Contact = () => {
           >
             We can be contacted <br /> via email{' '}
             <Link
-              _hover={{ textDecoration: 'none' }}
+              prefetch={false}
               href={`mailto:${CONTACT.email}`}
+              style={{ textDecoration: 'none' }}
             >
               <Text as="b" size="common" variant="appleGreen">
                 {CONTACT.email}
@@ -284,8 +286,9 @@ const Contact = () => {
             <br />
             or telephone on{' '}
             <Link
-              _hover={{ textDecoration: 'none' }}
+              style={{ textDecoration: 'none' }}
               href={`tel:${CONTACT.phoneNumber}`}
+              prefetch={false}
             >
               <Text as="b" size="common" variant="appleGreen">
                 {CONTACT.phoneNumber}

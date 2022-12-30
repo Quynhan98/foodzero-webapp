@@ -40,7 +40,11 @@ export class ErrorBoundary extends Component<Props, State> {
           >
             {SERVER_ERROR}
           </Text>
-          <Link href="/" style={{ fontSize: 'large', color: 'blue' }}>
+          <Link
+            href="/"
+            style={{ fontSize: 'large', color: 'blue' }}
+            prefetch={false}
+          >
             Back To Home
           </Link>
         </Center>

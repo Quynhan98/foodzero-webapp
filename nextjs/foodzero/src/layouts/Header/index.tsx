@@ -1,4 +1,5 @@
 import { useMemo } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import {
@@ -8,7 +9,6 @@ import {
   Flex,
   Heading,
   IconButton,
-  Link,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -112,7 +112,7 @@ const Header = () => {
     >
       <Flex gap={{ base: '20px', md: '45px' }} alignItems="center">
         <Heading as="h1">
-          <Link href="/">
+          <Link href="/" prefetch={false}>
             <Box
               width={{ base: '134px', lg: '307px' }}
               height={{ base: '50px', lg: '115px' }}
@@ -144,15 +144,13 @@ const Header = () => {
         />
       </Flex>
       <Flex gap="36px" alignItems="center">
-        <Link
-          display={{ base: 'none', md: 'block' }}
-          href={`tel:${CONTACT.phoneNumber}`}
-        >
-          <Text size="large" variant="primary">
-            {CONTACT.phoneNumber}
-          </Text>
-        </Link>
-
+        <Box display={{ base: 'none', md: 'block' }}>
+          <Link href={`tel:${CONTACT.phoneNumber}`}>
+            <Text size="large" variant="primary">
+              {CONTACT.phoneNumber}
+            </Text>
+          </Link>
+        </Box>
         <Button
           onClick={handClickReservationBtn}
           variant="primary"

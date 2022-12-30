@@ -40,7 +40,9 @@ const Footer = () => {
           width={{ base: '100%', md: '38%' }}
         >
           <Heading as="h1" maxW={{ base: '100px', md: '188px' }} size="default">
-            <Link href="/">Food Zero.</Link>
+            <Link href="/" prefetch={false}>
+              Food Zero.
+            </Link>
           </Heading>
           <Contact {...CONTACT} />
         </Flex>

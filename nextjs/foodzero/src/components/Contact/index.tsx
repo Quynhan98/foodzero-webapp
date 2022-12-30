@@ -40,7 +40,7 @@ const Contact = ({
           width={{ base: '215px', md: '297px' }}
         />
       )}
-      <Link href={`tel:${phoneNumber}`}>
+      <Link href={`tel:${phoneNumber}`} prefetch={false}>
         <Text
           variant="primary"
           pt={{ base: '20px', md: '38px' }}
@@ -49,7 +49,7 @@ const Contact = ({
           {phoneNumber}
         </Text>
       </Link>
-      <Link href={`mailto:${email}`}>
+      <Link href={`mailto:${email}`} prefetch={false}>
         <Text variant="primary" size={{ base: 'small', md: 'base' }}>
           {email}
         </Text>

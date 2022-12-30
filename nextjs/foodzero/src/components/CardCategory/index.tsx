@@ -32,6 +32,7 @@ const CardCategory = ({ href, category, imageUrl }: CardCategoryProps) => {
         </Text>
         <Link
           href={href}
+          prefetch={false}
           style={{
             position: 'relative',
             width: isMobile ? '36px' : '46px',

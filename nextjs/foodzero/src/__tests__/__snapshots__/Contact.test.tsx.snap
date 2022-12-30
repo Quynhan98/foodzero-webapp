@@ -116,8 +116,8 @@ exports[`Contact page Renders Contact page correctly 1`] = `
          via email
          
         <a
-          class="chakra-link css-13jvj27"
           href="mailto:info@foodzero.com"
+          style="text-decoration: none;"
         >
           <b
             class="chakra-text css-ycbatn"
@@ -129,8 +129,8 @@ exports[`Contact page Renders Contact page correctly 1`] = `
         or telephone on
          
         <a
-          class="chakra-link css-13jvj27"
           href="tel:+86 852 346 000"
+          style="text-decoration: none;"
         >
           <b
             class="chakra-text css-ycbatn"
